@@ -1,18 +1,18 @@
 # Sign Language Digit Recognition using CNNs
 
-This project implements a Convolutional Neural Network (CNN) to recognize hand gestures representing digits (0–9) in American Sign Language (ASL).
+This project implements a Convolutional Neural Network (CNN) to recognize hand gestures representing digits (0–5) in American Sign Language (ASL).
 
 ---
 
 ## 🤟 Objective
 
-To classify images of ASL hand signs into digit classes (0 through 9) using deep learning.
+To classify images of ASL hand signs into digit classes (0 through 5) using deep learning.
 
 ---
 
 ## 📊 Dataset
 
-- The dataset contains labeled images for each digit from 0 to 9.
+- The dataset contains labeled images for each digit from 0 to 5.
 - Hand gesture images are typically grayscale or RGB.
 - Preprocessing includes:
   - Resizing to a fixed input size (e.g., 64x64)
@@ -28,7 +28,7 @@ To classify images of ASL hand signs into digit classes (0 through 9) using deep
 - **Pooling Layers:** Downsample using `MaxPooling2D`
 - **Flattening:** Convert 2D features into 1D
 - **Dense Layers:** Fully connected layers with dropout for regularization
-- **Output:** Softmax layer for 10-class classification (digits 0–9)
+- **Output:** Softmax layer for 6-class classification (digits 0–5)
 
 ---
 
